@@ -1,0 +1,134 @@
+body {
+    background-color: rgba(173, 212, 226, 0.655);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+p, label, input, button{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    
+}
+
+.phone_container{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+
+
+.form{
+    background-color: whitesmoke;
+    display: inline-block;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    width: 500px;
+    min-height: 400px;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+ .phone_container, p,label,input,button{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.btn_container{
+    display: flex;
+    gap: 5px;
+}
+.btn_close{
+    flex: 1;
+    border:1px solid gray;
+    flex: 1;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn_create_account{
+    flex: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: block;
+    display: 100%;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 450px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    background-color: blue;
+    border:2px solid blue;
+    margin-right: 20px;
+}
+
+select{
+    border-radius: 10px;
+}
+
+input{
+    border:1px solid lightblue;
+    width: 450px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+p{
+    text-align: right;
+}
+
+.description{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 13px;
+}
+h1{
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phone_description{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 12px;
+    
+}
+
+.create_email{
+    display: block;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+.create_email:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.create_container{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
