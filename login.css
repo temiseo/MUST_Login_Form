@@ -2,6 +2,10 @@
 
 .login-box{
     text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
   
 }
 
@@ -86,6 +90,8 @@ input{
     width: 450px;
     height: 40px;
     border-radius: 8px;
+     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .sign-in{
@@ -101,6 +107,7 @@ input{
     color: white;
     background-color: blue;
     border:2px solid blue;
+   
     
 
 }
@@ -149,4 +156,8 @@ input{
 .forgot-password:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+button{
+     max-width: 100%;
+    box-sizing: border-box;
 }
