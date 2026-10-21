@@ -1,3 +1,5 @@
+
+/*main structure of the login form page css*/
 body {
     background-color: rgba(173, 212, 226, 0.655);
     display: flex;
@@ -8,6 +10,15 @@ body {
     box-sizing: border-box;
 }
 
+/*----------main container component of all other containers design------------*/
+.create_container{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*----------labels, inputs and buttons design----------------*/
 p, label, input, button{
     display: block;
     margin-bottom: 10px;
@@ -15,13 +26,15 @@ p, label, input, button{
     
 }
 
+/*-------------phone group design---------------------*/
+
 .phone_container{
     display: flex;
     gap: 10px;
     padding-bottom: 15px;
 }
 
-
+/*----------main create account form display design-----------*/
 
 .form{
     background-color: whitesmoke;
@@ -93,6 +106,8 @@ p{
     text-align: right;
 }
 
+/*------------*/
+
 .description{
     text-align: left;
     margin-left: 20px;
@@ -127,10 +142,4 @@ h1{
     text-decoration: underline;
     cursor: pointer;
 }
-.create_container{
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
+

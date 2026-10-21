@@ -1,5 +1,15 @@
+/*main structure of the login form page css*/
+body {
+    background-color: rgba(173, 212, 226, 0.655);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 
-
+/*----------main container component of all other containers design------------*/
 .login-box{
     text-align: center;
     width: 100%;
@@ -51,15 +61,8 @@ p{
     margin-left: 20px;
 
 }
-body {
-    background-color: rgba(173, 212, 226, 0.655);
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 20px 0;
-    box-sizing: border-box;
-}
+
+
 .form{
     background-color: whitesmoke;
     display: inline-block;
