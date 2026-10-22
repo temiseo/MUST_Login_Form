@@ -173,4 +173,5 @@ button{
     margin: 0 auto;
     border-radius: 50px;
     padding: 8px;
+    object-fit: contain;
 }
