@@ -164,3 +164,13 @@ button{
      max-width: 100%;
     box-sizing: border-box;
 }
+
+/*---------university logo design*/
+.University-logo{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 8px;
+}
