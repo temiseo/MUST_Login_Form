@@ -1,145 +1,191 @@
 
-/*main structure of the login form page css*/
+
+/* consistent sizing for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Main page structure */
 body {
     background-color: rgba(173, 212, 226, 0.655);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-height: 100svh; 
     margin: 0;
-    padding: 20px 0;
-    box-sizing: border-box;
+    padding: clamp(16px, 4vw, 32px) 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*----------main container component of all other containers design------------*/
-.create_container{
+/* Main container */
+.create_container {
     text-align: center;
-    width: 100%;
+    width: 100%;         
     max-width: 500px;
     margin: 0 auto;
-    box-sizing: border-box;
-}
-/*----------labels, inputs and buttons design----------------*/
-p, label, input, button{
-    display: block;
-    margin-bottom: 10px;
-    text-align: left;
-    
 }
 
-/*-------------phone group design---------------------*/
-
-.phone_container{
-    display: flex;
-    gap: 10px;
-    padding-bottom: 15px;
-}
-
-/*----------main create account form display design-----------*/
-
-.form{
+/* Main create-account form card */
+.form {
     background-color: whitesmoke;
-    display: inline-block;
-    padding-bottom: 20px;
-    border-radius: 20px;
-    width: 500px;
+    display: block;       
+    width: 100%;         
+    max-width: 500px;
     min-height: 400px;
-    box-sizing: border-box;
-    
-    
-    
+    padding: 12px 0 20px;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
- .phone_container, p,label,input,button{
-    margin-left: 20px;
-    margin-right: 20px;
+/* Form heading */
+h1 {
+    margin: 8px 20px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: clamp(22px, 5vw, 25px); 
     font-family: Arial, Helvetica, sans-serif;
-    
 }
-label{
+
+
+.form p,
+.form label,
+.form input,
+.form button,
+.form select {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    display: block;
+    margin: 0 20px 8px;
+    text-align: left;
     font-weight: bold;
 }
-.btn_container{
-    display: flex;
-    gap: 5px;
-}
-.btn_close{
-    flex: 1;
-    border:1px solid gray;
-    flex: 1;
-    height: 35px;
-    border-radius: 10px;
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
-}
 
-.btn_create_account{
-    flex: 2;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+
+.form > form > input {
     display: block;
-    display: 100%;
-    border-radius: 15px;
-    font-size: 15px;
-    width: 450px;
-    text-align: center;
-    height: 40px;
-    color: white;
-    background-color: blue;
-    border:2px solid blue;
-    margin-right: 20px;
-}
-
-select{
-    border-radius: 10px;
-}
-
-input{
-    border:1px solid lightblue;
-    width: 450px;
-    height: 40px;
+    width: calc(100% - 40px);
+    min-width: 0;
+    height: 42px;
+    margin: 0 20px 16px;
+    padding: 0 12px;
+    border: 1px solid lightblue;
     border-radius: 8px;
+    font-size: 16px; 
 }
 
-p{
-    text-align: right;
+/* Phone number group */
+.phone_container {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding-bottom: 8px;
 }
 
-/*------------*/
 
-.description{
+.phone_container select {
+    flex: 0 1 38%;
+    width: 38%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 0 8px;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+}
+
+
+.phone_container input {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: 42px;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Description text */
+.description {
+    margin: 0 20px 18px;
     text-align: left;
-    margin-left: 20px;
     font-size: 13px;
-}
-h1{
-    text-align: left;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-.phone_description{
+.phone_description {
+    margin: 0 20px 16px;
+    padding-bottom: 4px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    padding-bottom: 10px;
     font-size: 12px;
-    
+    line-height: 1.5;
 }
 
-.create_email{
+/* Link below email input */
+.create_email {
     display: block;
-    margin-right: 20px;
+    width: calc(100% - 40px);
+    margin: 0 20px 16px;
+    padding-bottom: 4px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    padding-bottom: 10px;
     text-align: right;
 }
-.create_email:hover{
+
+.create_email:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
+/* Button group */
+.btn_container {
+    display: flex;
+    gap: 8px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+}
+
+
+.btn_container button {
+    min-width: 0;
+    min-height: 40px;
+    margin: 0;
+    padding: 8px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn_close {
+    flex: 1 1 0;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.btn_create_account {
+    flex: 2 1 0;
+    border: 2px solid blue;
+    color: white;
+    background-color: blue;
+    border-radius: 15px !important;
+}
+
+
+button,
+input,
+select {
+    max-width: 100%;
+}
